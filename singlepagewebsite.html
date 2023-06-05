@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Naveen kumar</title>
+    <link rel="stylesheet" href="singlepagewebsite.css"/>
+    <script src="singlepagewebsite.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+        Naveen kumar
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          mnk@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +91123456789
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">skills</a>
+          <a class="topmenu" href="#about-me">projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="programmer2.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Naveen kumar <img src="emoji2.png" width="60px"/>
+          </h1>
+          <p>
+            I'm a web developer. I'm passionate about creating beautiful and functional websites that make people's lives easier. I have experience with a variety of programming languages and frameworks, and I'm always up for a challenge. I'm also a team player and I love collaborating with others to create amazing things.</p>
+
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        
+        <div class="skill">
+          <img src="ruby.jpg"/>
+          <h6>ruby</h6>
+          <p>1 years experience</p>
+        </div>  
+
+
+        <div class="skill">
+          <img src="c++.png"/>
+          <h6>c++</h6>
+          <p>1 year experince</p>
+        </div> 
+
+        <div class="skill">
+            <img src="css.png"/>
+            <h6>css</h6>
+            <p>1 year experince</p>
+          </div> 
+    
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Weather app</h3>
+            <ul>
+              <li>This is an app that provides users with current and forecast weather information. It can be a great way to learn about web development, such as HTTP requests, JSON parsing, and API integration.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Password manager</h3>
+            <ul>
+        <li>This is an app that helps users generate and store secure passwords. It can be a great way to protect your online accounts from unauthorized access.</li>
+          </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Image gallery</h3>
+            <ul>
+              <li>This is an app that allows users to view and manage images. It can be a great way to learn about image manipulation, such as resizing, cropping, and rotating images.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John's passion for web development started at a young age. He was always interested in how things worked and was always tinkering with computers. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Sarah's knowledge and expertise are vast. She has a deep understanding of her field, and she is always up-to-date on the latest trends and developments. Sarah is also a skilled communicator, and she is able to explain complex concepts in a clear and concise manner.
+         
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Steve Smith on the development of a new software application. Steve was the lead developer on the project, and I was responsible for testing and quality assurance.
+          <span>&#8221;</span>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for giving a recommendation</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
